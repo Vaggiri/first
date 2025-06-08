@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girisudhan V | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    .project {
+      background: #eee;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Girisudhan V</h1>
+    <p>Tech Explorer & Future Innovator</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <br>
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome</h2>
+      <p>Hey, I'm Girisudhan 👋 — an ECE student at Amrita University passionate about IoT, Web Dev, and Automation.</p>
+    </div>
+  </section>
+
+  <section id="about" style="background: #fafafa;">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I love blending creativity with code. From smart systems to beautiful web apps, I'm on a journey to build impactful tech.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Smart Weather Bot</h3>
+        <p>NodeMCU + WhatsApp API (Twilio) to display real-time weather & soil data.</p>
+      </div>
+      <div class="project">
+        <h3>Expense Tracker</h3>
+        <p>Web app that tracks credits & debits, shows balance, and saves data to Google Sheets.</p>
+      </div>
+      <div class="project">
+        <h3>ESP32 Home Automation</h3>
+        <p>Control lights & fans via a custom web dashboard with real-time control and feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background: #fafafa;">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:girisudhan211@gmail.com">girisudhan211@gmail.com</a></p>
+      <p>🌐 Website: <a href="https://girisudhan.liveblog365.com" target="_blank">girisudhan.liveblog365.com</a></p>
+      <p>📷 Instagram: <a href="https://instagram.com/vag.creations" target="_blank">@vag.creations</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Girisudhan V — Built with 💻</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      if (body.style.backgroundColor === "black") {
+        body.style.backgroundColor = "#f5f5f5";
+        body.style.color = "#222";
+      } else {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+      }
+    }
+  </script>
+
+</body>
+</html>
