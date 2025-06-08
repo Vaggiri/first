@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XYZ | Portfolio</title>
+  <meta name="description" content="Portfolio of Girisudhan V, showcasing projects in IoT, Web Development, and Automation." />
+  <meta name="author" content="Girisudhan V" />
+  <meta property="og:title" content="Girisudhan V | Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Girisudhan V, featuring innovative projects and contact details." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://girisudhan.liveblog365.com" />
+  <meta property="og:image" content="path/to/preview-image.jpg" />
+  <title>Girisudhan V | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       margin: 0;
@@ -57,63 +65,66 @@
 <body>
 
   <header>
-    <h1>XYZ</h1>
+    <h1>Girisudhan V</h1>
     <p>Tech Explorer & Future Innovator</p>
-    <nav>
+    <nav aria-label="Main Navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <br>
-    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    <br />
+    <button id="themeToggle" aria-pressed="false" onclick="toggleTheme()">Toggle Dark Mode</button>
   </header>
 
-  <section id="home">
-    <div class="container">
-      <h2>Welcome</h2>
-      <p>Hey, I'm Girisudhan 👋 — an ECE student at Amrita University passionate about IoT, Web Dev, and Automation.</p>
-    </div>
-  </section>
-
-  <section id="about" style="background: #fafafa;">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I love blending creativity with code. From smart systems to beautiful web apps, I'm on a journey to build impactful tech.</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Smart Weather Bot</h3>
-        <p>NodeMCU + WhatsApp API (Twilio) to display real-time weather & soil data.</p>
+  <main>
+    <section id="home">
+      <div class="container">
+        <h2>Welcome</h2>
+        <p>Hey, I'm Girisudhan 👋 — an ECE student at Amrita University passionate about IoT, Web Dev, and Automation.</p>
       </div>
-      <div class="project">
-        <h3>Expense Tracker</h3>
-        <p>Web app that tracks credits & debits, shows balance, and saves data to Google Sheets.</p>
-      </div>
-      <div class="project">
-        <h3>ESP32 Home Automation</h3>
-        <p>Control lights & fans via a custom web dashboard with real-time control and feedback.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" style="background: #fafafa;">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>📧 Email: <a href="mailto:girisudhan211@gmail.com">girisudhan211@gmail.com</a></p>
-      <p>🌐 Website: <a href="https://girisudhan.liveblog365.com" target="_blank">girisudhan.liveblog365.com</a></p>
-      <p>📷 Instagram: <a href="https://instagram.com/vag.creations" target="_blank">@vag.creations</a></p>
-    </div>
-  </section>
+    <section id="about" class="light-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I love blending creativity with code. From smart systems to beautiful web apps, I'm on a journey to build impactful tech.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Smart Weather Bot</h3>
+          <p>NodeMCU + WhatsApp API (Twilio) to display real-time weather & soil data.</p>
+        </div>
+        <div class="project">
+          <h3>Expense Tracker</h3>
+          <p>Web app that tracks credits & debits, shows balance, and saves data to Google Sheets.</p>
+        </div>
+        <div class="project">
+          <h3>ESP32 Home Automation</h3>
+          <p>Control lights & fans via a custom web dashboard with real-time control and feedback.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="light-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>📧 Email: <a href="mailto:girisudhan211@gmail.com">girisudhan211@gmail.com</a></p>
+        <p>🌐 Website: <a href="https://girisudhan.liveblog365.com" target="_blank" rel="noopener noreferrer">girisudhan.liveblog365.com</a></p>
+        <p>📷 Instagram: <a href="https://instagram.com/vag.creations" target="_blank" rel="noopener noreferrer">@vag.creations</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Girisudhan V — Built with 💻</p>
   </footer>
 
+  <script src="scripts.js"></script>
   <script>
     function toggleTheme() {
       const body = document.body;
