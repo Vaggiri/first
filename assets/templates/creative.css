@@ -1,0 +1,112 @@
+/* Creative Template Styles */
+#resumePreview {
+    font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #2d3748;
+    background-color: #f8fafc;
+    border-left: 10px solid #10b981;
+}
+
+#resumePreview .header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#resumePreview .name-title {
+    flex: 1;
+}
+
+#resumePreview .header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+#resumePreview .header h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+#resumePreview .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#resumePreview .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#resumePreview .section {
+    padding: 1.5rem 2rem;
+}
+
+#resumePreview .section-title {
+    font-size: 1.5rem;
+    color: #10b981;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#resumePreview .experience-item, 
+#resumePreview .education-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+#resumePreview .experience-item::before, 
+#resumePreview .education-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #10b981;
+    border-radius: 50%;
+}
+
+#resumePreview .job-title, 
+#resumePreview .degree {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+#resumePreview .company, 
+#resumePreview .school {
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 0.25rem;
+}
+
+#resumePreview .date {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+#resumePreview .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+#resumePreview .skill {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    text-align: center;
+}
